@@ -1,0 +1,7 @@
+﻿  first_app.cpp
+  lve_pipeline.cpp
+E:\WenGou\Vulkan\VulkanTest\lve_pipeline.cpp(4,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  main.cpp
+  正在生成代码...
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  VulkanTest.vcxproj -> E:\WenGou\Vulkan\VulkanTest\x64\Debug\VulkanTest.exe
