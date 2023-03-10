@@ -1,10 +1,12 @@
-﻿  engine.cpp
-E:\WenGou\Vulkan\VulkanDev\device.h(144,160): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
-E:\WenGou\Vulkan\VulkanDev\pipeline.h(171,22): warning C4244: “=”: 从“float”转换到“int32_t”，可能丢失数据
-E:\WenGou\Vulkan\VulkanDev\pipeline.h(172,22): warning C4244: “=”: 从“float”转换到“int32_t”，可能丢失数据
-E:\WenGou\Vulkan\VulkanDev\pipeline.h(209,48): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
-E:\WenGou\Vulkan\VulkanDev\framebuffer.h(31,56): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
-E:\WenGou\Vulkan\VulkanDev\engine.cpp(158,22): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
-E:\WenGou\Vulkan\VulkanDev\engine.cpp(159,20): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
-E:\WenGou\Vulkan\VulkanDev\engine.cpp(204,25): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
-  VulkanDev.vcxproj -> E:\WenGou\Vulkan\VulkanDev\x64\Debug\VulkanDev.exe
+﻿  app.cpp
+  engine.cpp
+E:\Learn\Vulkan\VulkanDev\device.h(144,160): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
+E:\Learn\Vulkan\VulkanDev\pipeline.h(218,48): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+E:\Learn\Vulkan\VulkanDev\pipeline.h(314,22): warning C4244: “=”: 从“float”转换到“int32_t”，可能丢失数据
+E:\Learn\Vulkan\VulkanDev\pipeline.h(315,22): warning C4244: “=”: 从“float”转换到“int32_t”，可能丢失数据
+E:\Learn\Vulkan\VulkanDev\framebuffer.h(31,56): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+E:\Learn\Vulkan\VulkanDev\engine.cpp(354,22): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
+E:\Learn\Vulkan\VulkanDev\engine.cpp(355,20): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
+  main.cpp
+  正在生成代码...
+  VulkanDev.vcxproj -> E:\Learn\Vulkan\VulkanDev\x64\Debug\VulkanDev.exe

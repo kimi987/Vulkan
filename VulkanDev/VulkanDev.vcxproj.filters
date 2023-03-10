@@ -33,6 +33,15 @@
     <ClCompile Include="scene.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="memory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleMesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vertex_menagerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.h">
@@ -77,13 +86,25 @@
     <ClInclude Include="app.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="标头.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
     <ClInclude Include="render_structs.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="memory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="triangle_mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_menagerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="descriptors.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

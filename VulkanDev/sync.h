@@ -8,17 +8,15 @@ namespace vkInit {
 		\param debug whether the system is running in debug mode
 		\returns the created semaphore
 	*/
-	vk::Semaphore make_semaphore(vk::Device device, bool debug) {
+	vk::Semaphore make_semaphore(vk::Device device) {
 		vk::SemaphoreCreateInfo semaphoreInfo = {};
 		semaphoreInfo.flags = vk::SemaphoreCreateFlags();
 		try {
 			return device.createSemaphore(semaphoreInfo);
 		}
 		catch (vk::SystemError err) {
-			if (debug)
-			{
-				std::cout << "Failed to create semaphore " << std::endl;
-			}
+	
+			std::cout << "Failed to create semaphore " << std::endl;
 			return nullptr;
 		}
 	}
@@ -29,7 +27,7 @@ namespace vkInit {
 		\param debug whether the system is running in debug mode
 		\returns the created fence
 	*/
-	vk::Fence make_fence(vk::Device device, bool debug) {
+	vk::Fence make_fence(vk::Device device) {
 		vk::FenceCreateInfo fenceInfo = {};
 		fenceInfo.flags = vk::FenceCreateFlags() | vk::FenceCreateFlagBits::eSignaled;
 
@@ -37,9 +35,7 @@ namespace vkInit {
 			return device.createFence(fenceInfo);
 		}
 		catch (vk::SystemError err) {
-			if (debug) {
-				std::cout << "Failed to create fence " << std::endl;
-			}
+			std::cout << "Failed to create fence " << std::endl;
 			return nullptr;
 		}
 	}
