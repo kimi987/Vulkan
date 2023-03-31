@@ -5,6 +5,7 @@
 #include "frame.h"
 #include "scene.h"
 #include "vertex_menagerie.h"
+#include "image.h"
 
 class Engine {
 public:
@@ -50,8 +51,10 @@ private:
 	vk::Pipeline pipeline;
 
 	//descriptor-related variables
-	vk::DescriptorSetLayout descriptorSetLayout;
-	vk::DescriptorPool descriptorPool;
+	vk::DescriptorSetLayout frameSetLayout;
+	vk::DescriptorPool frameDescriptorPool; //Descriptors bound on a "per frame" basis
+	vk::DescriptorSetLayout meshSetLayout;
+	vk::DescriptorPool meshDescriptorPool;  //Descriptors bound on a "pre mesh" basis
 
 	//Command-related variables
 	vk::CommandPool commandPool;
@@ -62,6 +65,7 @@ private:
 
 	//asset pointers
 	VertexMenagerie* meshes;
+	std::unordered_map<meshTypes, vkImage::Texture*> materials;
 
 	//instance setup
 	void make_instance();
@@ -89,6 +93,7 @@ private:
 	void prepare_frame(uint32_t imageIndex, Scene* scene);
 	void prepare_scene(vk::CommandBuffer commandBuffer);
 	void record_draw_commands(vk::CommandBuffer commandBuffer, uint32_t imageIndex, Scene* scene);
+	void render_objects(vk::CommandBuffer commandBuffer, meshTypes objectType, uint32_t& startInstance, uint32_t instanceCount);
 
 	//Cleanup functions
 	void cleanup_swapchain();

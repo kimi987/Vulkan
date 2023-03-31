@@ -23,7 +23,8 @@ namespace vkInit {
 		for (int i = 0; i < frames.size(); i++)
 		{
 			std::vector<vk::ImageView> attachments = {
-				frames[i].imageView
+				frames[i].imageView,
+				frames[i].depthBufferView
 			};
 			vk::FramebufferCreateInfo framebufferInfo;
 			framebufferInfo.flags = vk::FramebufferCreateFlags();

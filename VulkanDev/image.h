@@ -27,6 +27,7 @@ namespace vkImage {
 		vk::ImageTiling tilling;
 		vk::ImageUsageFlags usage;
 		vk::MemoryPropertyFlags memoryProperties;
+		vk::Format format;
 	};
 
 	/*
@@ -130,6 +131,7 @@ namespace vkImage {
 	/*
 		Create a view of a vulkan image.
 	*/
-	vk::ImageView make_image_view(vk::Device logicalDevice, vk::Image image, vk::Format format);
+	vk::ImageView make_image_view(vk::Device logicalDevice, vk::Image image, vk::Format format, vk::ImageAspectFlags aspect);
 
+	vk::Format find_supproted_format(vk::PhysicalDevice physicalDevice, const std::vector<vk::Format>& candidates, vk::ImageTiling tilling, vk::FormatFeatureFlags features);
 }

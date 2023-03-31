@@ -136,12 +136,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="app.cpp" />
+    <ClCompile Include="descriptor.cpp" />
     <ClCompile Include="engine.cpp" />
+    <ClCompile Include="frame.cpp" />
+    <ClCompile Include="image.cpp" />
     <ClCompile Include="instance.cpp" />
     <ClCompile Include="logging.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="memory.cpp" />
     <ClCompile Include="scene.cpp" />
+    <ClCompile Include="single_time_commands.cpp" />
     <ClCompile Include="TriangleMesh.cpp" />
     <ClCompile Include="vertex_menagerie.cpp" />
   </ItemGroup>
@@ -154,6 +158,7 @@
     <ClInclude Include="engine.h" />
     <ClInclude Include="frame.h" />
     <ClInclude Include="framebuffer.h" />
+    <ClInclude Include="image.h" />
     <ClInclude Include="instance.h" />
     <ClInclude Include="logging.h" />
     <ClInclude Include="memory.h" />
@@ -163,6 +168,8 @@
     <ClInclude Include="render_structs.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="shaders.h" />
+    <ClInclude Include="single_time_commands.h" />
+    <ClInclude Include="stb_image.h" />
     <ClInclude Include="swapchain.h" />
     <ClInclude Include="sync.h" />
     <ClInclude Include="triangle_mesh.h" />
